@@ -58,10 +58,7 @@ jobs:
   - template: ci/build-all-steps.yml
     parameters:
       os: Linux
-- task: Cache@2
-  inputs:
-    key: 'zzzzzzzzzzzzzz'
-    path: 'zzzzzzzzzzzzzz'
+
 # All tasks on macOS
 - job: build_all_darwin
   displayName: Build all tasks (macOS)
